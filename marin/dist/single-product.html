@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#E2DDD2">
+	<title>MARIN</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__inner">
+				<div class="header__logo visible-on-desktop">
+					<a href="index.html" class="header__logo-link">
+						<picture>
+							<source srcset="img/logo.avif" type="image/avif">
+							<source srcset="img/logo.webp" type="image/webp">
+							<img src="img/logo.png" alt="Logo" width="205" height="42" loading="lazy" class="header__logo-img">
+						</picture>
+					</a>
+				</div>
+				<nav class="header__nav">
+					<div class="header__nav-body">
+						<div class="header__nav-top visible-on-mob">
+							<div class="header__user">
+								<a href="#login-popup" class="header__user-target open-popup" aria-label="User">
+									<svg width="31" height="31">
+										<use href="img/sprites.svg#user"></use>
+									</svg>
+									<span>
+										Jenifer
+									</span>
+								</a>
+							</div>
+							<div class="header__lang">
+								<button class="header__lang-target" aria-label="En">
+									<span>En</span>
+									<svg width="7" height="5">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</button>
+								<ul class="header__lang-list">
+									<li>
+										<a href="#">
+											Ru
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Ua
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<ul class="header__nav-list">
+							<li>
+								<a href="index.html" class="is-current">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="products.html">
+									Shop
+								</a>
+							</li>
+							<li>
+								<a href="news.html">
+									News
+								</a>
+							</li>
+							<li>
+								<a href="about.html">
+									About
+								</a>
+							</li>
+							<li>
+								<a href="contact.html">
+									Contact
+								</a>
+							</li>
+						</ul>
+						<div class="header__nav-bottom visible-on-mob">
+							<div class="header__subscribe">
+								<a href="#" class="header__subscribe-target">
+									subscribe
+								</a>
+							</div>
+							<ul class="header__social">
+								<li>
+									<a href="#" aria-label="Instagram" target="_blank">
+										<svg width="40" height="40">
+											<use href="img/sprites.svg#instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Twitter" target="_blank">
+										<svg width="40" height="40">
+											<use href="img/sprites.svg#twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Facebook" target="_blank">
+										<svg width="40" height="40">
+											<use href="img/sprites.svg#facebook"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<div class="header__add">
+					<div class="header__lang visible-on-desktop">
+						<button class="header__lang-target" aria-label="En">
+							<span>En</span>
+							<svg width="7" height="5">
+								<use href="img/sprites.svg#drop-down-arrow"></use>
+							</svg>
+						</button>
+						<ul class="header__lang-list">
+							<li>
+								<a href="#">
+									Ru
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Ua
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header__search">
+						<button class="header__search-target" aria-label="Search">
+							<svg width="35" height="35">
+								<use href="img/sprites.svg#search"></use>
+							</svg>
+						</button>
+						<form class="header__search-form container">
+							<input type="search" name="search" placeholder="Search" required class="header__search-input">
+						</form>
+					</div>
+					<div class="header__favorites">
+						<a href="#favorites-popup" class="header__favorites-target open-popup" data-length="4" aria-label="Favorites">
+							<svg width="28" height="27">
+								<use href="img/sprites.svg#favorites"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="header__logo visible-on-mob">
+						<a href="index.html" class="header__logo-link">
+							<picture>
+								<source srcset="img/logo.avif" type="image/avif">
+								<source srcset="img/logo.webp" type="image/webp">
+								<img src="img/logo.png" alt="Logo" width="205" height="42" loading="lazy" class="header__logo-img">
+							</picture>
+						</a>
+					</div>
+					<div class="header__user visible-on-desktop">
+						<a href="#login-popup" class="header__user-target open-popup" aria-label="User">
+							<svg width="31" height="31">
+								<use href="img/sprites.svg#user"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="header__cart">
+						<a href="#cart-popup" class="header__cart-target open-popup" data-length="4" aria-label="Cart">
+							<svg width="28" height="28">
+								<use href="img/sprites.svg#cart"></use>
+							</svg>
+						</a>
+					</div>
+					<button class="header__burger" type="button" aria-label="Menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<div class="breadcrumbs container">
+			<a href="#" class="breadcrumbs__link">Home</a>
+			<span class="breadcrumbs__separator">|</span>
+			<a href="#" class="breadcrumbs__link">Catalog</a>
+			<span class="breadcrumbs__separator">|</span>
+			<span class="breadcrumbs__current">Seamless short sleeve top</span>
+		</div>
+		<main class="main">
+			<section class="product">
+				<div class="product__gallery">
+					<div class="product__pagination-gallery product-pagination-gallery splide">
+						<div class="product-pagination-gallery__track splide__track">
+							<ul class="product-pagination-gallery__list splide__list">
+								<li class="product-pagination-gallery__slide splide__slide">
+									<picture>
+										<source srcset="img/index/hero/index-hero-image-large.avif" type="image/avif">
+										<source srcset="img/index/hero/index-hero-image-large.webp" type="image/webp">
+										<img src="img/index/hero/index-hero-image-large.jpg" alt="" width="105" height="151" class="image-aspect-ratio" style="--aspect-ratio: 105/151" loading="lazy">
+									</picture>
+								</li>
+								<li class="product-pagination-gallery__slide splide__slide">
+									<picture>
+										<source srcset="img/index/hero/index-hero-image.avif" type="image/avif">
+										<source srcset="img/index/hero/index-hero-image.webp" type="image/webp">
+										<img src="img/index/hero/index-hero-image.jpg" alt="" width="105" height="151" class="image-aspect-ratio" style="--aspect-ratio: 105/151" loading="lazy">
+									</picture>
+								</li>
+								<li class="product-pagination-gallery__slide splide__slide">
+									<picture>
+										<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+										<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+										<img src="img/products-cards/product-card-image-1.jpg" alt="" width="105" height="151" class="image-aspect-ratio" style="--aspect-ratio: 105/151" loading="lazy">
+									</picture>
+								</li>
+								<li class="product-pagination-gallery__slide splide__slide">
+									<picture>
+										<source srcset="img/products-cards/product-card-image-2.avif" type="image/avif">
+										<source srcset="img/products-cards/product-card-image-2.webp" type="image/webp">
+										<img src="img/products-cards/product-card-image-2.jpg" alt="" width="105" height="151" class="image-aspect-ratio" style="--aspect-ratio: 105/151" loading="lazy">
+									</picture>
+								</li>
+								<li class="product-pagination-gallery__slide splide__slide">
+									<picture>
+										<source srcset="img/products-cards/product-card-image-3.avif" type="image/avif">
+										<source srcset="img/products-cards/product-card-image-3.webp" type="image/webp">
+										<img src="img/products-cards/product-card-image-3.jpg" alt="" width="105" height="151" class="image-aspect-ratio" style="--aspect-ratio: 105/151" loading="lazy">
+									</picture>
+								</li>
+								<li class="product-pagination-gallery__slide splide__slide">
+									<picture>
+										<source srcset="img/products-cards/product-card-image-4.avif" type="image/avif">
+										<source srcset="img/products-cards/product-card-image-4.webp" type="image/webp">
+										<img src="img/products-cards/product-card-image-4.jpg" alt="" width="105" height="151" class="image-aspect-ratio" style="--aspect-ratio: 105/151" loading="lazy">
+									</picture>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="product__main-gallery product-main-gallery splide">
+						<div class="product-main-gallery__track splide__track">
+							<ul class="product-main-gallery__list splide__list">
+								<li class="product-main-gallery__slide splide__slide">
+									<picture>
+										<source srcset="img/index/hero/index-hero-image-large.avif" type="image/avif">
+										<source srcset="img/index/hero/index-hero-image-large.webp" type="image/webp">
+										<img src="img/index/hero/index-hero-image-large.jpg" alt="" width="591" height="857" style="--aspect-ratio: 591/857;" class="image-aspect-ratio" loading="lazy">
+									</picture>
+								</li>
+								<li class="product-main-gallery__slide splide__slide">
+									<picture>
+										<source srcset="img/index/hero/index-hero-image.avif" type="image/avif">
+										<source srcset="img/index/hero/index-hero-image.webp" type="image/webp">
+										<img src="img/index/hero/index-hero-image.jpg" alt="" width="591" height="857" style="--aspect-ratio: 591/857;" class="image-aspect-ratio" loading="lazy">
+									</picture>
+								</li>
+								<li class="product-main-gallery__slide splide__slide">
+									<picture>
+										<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+										<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+										<img src="img/products-cards/product-card-image-1.jpg" alt="" width="591" height="857" style="--aspect-ratio: 591/857;" class="image-aspect-ratio" loading="lazy">
+									</picture>
+								</li>
+								<li class="product-main-gallery__slide splide__slide">
+									<picture>
+										<source srcset="img/products-cards/product-card-image-2.avif" type="image/avif">
+										<source srcset="img/products-cards/product-card-image-2.webp" type="image/webp">
+										<img src="img/products-cards/product-card-image-2.jpg" alt="" width="591" height="857" style="--aspect-ratio: 591/857;" class="image-aspect-ratio" loading="lazy">
+									</picture>
+								</li>
+								<li class="product-main-gallery__slide splide__slide">
+									<picture>
+										<source srcset="img/products-cards/product-card-image-3.avif" type="image/avif">
+										<source srcset="img/products-cards/product-card-image-3.webp" type="image/webp">
+										<img src="img/products-cards/product-card-image-3.jpg" alt="" width="591" height="857" style="--aspect-ratio: 591/857;" class="image-aspect-ratio" loading="lazy">
+									</picture>
+								</li>
+								<li class="product-main-gallery__slide splide__slide">
+									<picture>
+										<source srcset="img/products-cards/product-card-image-4.avif" type="image/avif">
+										<source srcset="img/products-cards/product-card-image-4.webp" type="image/webp">
+										<img src="img/products-cards/product-card-image-4.jpg" alt="" width="591" height="857" style="--aspect-ratio: 591/857;" class="image-aspect-ratio" loading="lazy">
+									</picture>
+								</li>
+							</ul>
+						</div>
+						<div class="product-main-gallery__arrows splide__arrows">
+							<button class="product-main-gallery__arrow splide__arrow splide__arrow--prev" type="button">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#arrow-prev-3"></use>
+								</svg>
+							</button>
+							<button class="product-main-gallery__arrow splide__arrow splide__arrow--next" type="button">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#arrow-next-3"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+				<form class="product__about">
+					<h1 class="product__title">
+						Seamless short sleeve top
+					</h1>
+					<div class="product__article">Article: 2131232</div>
+					<div class="product__info">
+						<strong class="product__price">3, 500 грн</strong>
+						<a href="#" class="product__share" aria-label="Share">
+							<svg width="20" height="20">
+								<use href="img/sprites.svg#share"></use>
+							</svg>
+							<span>
+								Share
+							</span>
+						</a>
+						<a href="#favorites-popup" class="product__favorite" aria-label="Add to favorites">
+							<svg width="28" height="27">
+								<use href="img/sprites.svg#favorites"></use>
+							</svg>
+							<svg width="28" height="27">
+								<use href="img/sprites.svg?v=3#favorites-active"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product__settings">
+						<div class="product__settings-color">
+							<b>Color</b>
+							<label>
+								<input type="radio" name="color" value="1" required>
+								<span style="--color: #B0B4C9;"></span>
+							</label>
+							<label>
+								<input type="radio" name="color" value="2" required>
+								<span style="--color: #C6B0C9;"></span>
+							</label>
+							<label>
+								<input type="radio" name="color" value="3" required>
+								<span style="--color: #B6C9B0;"></span>
+							</label>
+						</div>
+						<div class="product__settings-size">
+							<b>Size</b>
+							<label>
+								<input type="radio" name="size" value="xs" required>
+								<span>XS</span>
+							</label>
+							<label>
+								<input type="radio" name="size" value="s" required>
+								<span>S</span>
+							</label>
+							<label>
+								<input type="radio" name="size" value="ml" required>
+								<span>ML</span>
+							</label>
+						</div>
+					</div>
+					<button type="submit" class="product__to-basket button">
+						Add to Basket
+					</button>
+					<table class="product__composition">
+						<colgroup>
+							<col>
+							<col>
+						</colgroup>
+						<tr>
+							<th scope="row">Material</th>
+							<td>Cotton</td>
+						</tr>
+						<tr>
+							<th scope="row">Material composition</th>
+							<td>60% polyester</td>
+						</tr>
+						<tr>
+							<th scope="row">Style</th>
+							<td>Evening</td>
+						</tr>
+						<tr>
+							<th scope="row">Season</th>
+							<td>For any season </td>
+						</tr>
+						<tr>
+							<th scope="row">Country manufacturer</th>
+							<td>Italy</td>
+						</tr>
+					</table>
+					<div class="product__description">
+						<h2 class="product__description-title">Description</h2>
+						<div class="product__description-text">
+							<p>Warm jacket with a removable hood, large pockets, zippers and buttons. The set includes a belt with which you can highlight your waist</p>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sapiente, debitis explicabo similique accusamus et, esse nostrum vero dolores necessitatibus distinctio sed voluptas maiores ut error cumque ducimus. Neque, ducimus!
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fuga repellat temporibus ad quo consectetur quasi? Vero expedita rerum atque. Pariatur enim, assumenda repudiandae deleniti autem reprehenderit molestias quia consequatur.
+							</p>
+						</div>
+						<button type="button" class="product__description-more">
+							See more
+						</button>
+					</div>
+					<div class="product__add-links">
+						<a href="#" class="product__add-link">
+							Shipping and payment
+						</a>
+						<a href="#" class="product__add-link">
+							Size table
+						</a>
+						<a href="#" class="product__add-link">
+							Description and care
+						</a>
+					</div>
+					<div class="product__complete-look">
+						<h2 class="product__complete-look-title">Complete the look</h2>
+						<ul class="product__complete-look-list">
+							<li class="product__complete-look-card product-min-card">
+								<a href="single-product.html" class="product-min-card__inner" aria-label="Beige coat with belt">
+									<div class="product-min-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-5.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-5.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-5.jpg" alt="" width="171" height="248" class="image-aspect-ratio" style="--aspect-ratio: 171/248;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="product-min-card__name">
+										Beige coat with belt
+									</h3>
+								</a>
+							</li>
+							<li class="product__complete-look-card product-min-card">
+								<a href="single-product.html" class="product-min-card__inner" aria-label="Beige coat with belt">
+									<div class="product-min-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-5.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-5.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-5.jpg" alt="" width="171" height="248" class="image-aspect-ratio" style="--aspect-ratio: 171/248;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="product-min-card__name">
+										Beige coat with belt
+									</h3>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</form>
+			</section>
+			<section class="novelty">
+				<h2 class="novelty__title section-title">
+					Novelty
+				</h2>
+				<div class="novelty__slider products-slider splide">
+					<div class="products-slider__track splide__track">
+						<ul class="products-slider__list splide__list">
+							<li class="products-slider__slide products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-slider__slide products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-2.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-2.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-2.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-slider__slide products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-3.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-3.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-3.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-slider__slide products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-4.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-4.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-4.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-slider__slide products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-slider__slide products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-2.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-2.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-2.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-slider__slide products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-3.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-3.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-3.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-slider__slide products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-4.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-4.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-4.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="products-slider__arrows splide__arrows">
+						<button class="products-slider__arrow splide__arrow splide__arrow--prev" type="button">
+							<svg width="29" height="58">
+								<use href="img/sprites.svg#arrow-prev"></use>
+							</svg>
+							<svg width="29" height="58">
+								<use href="img/sprites.svg?v=1#arrow-prev-filled"></use>
+							</svg>
+						</button>
+						<button class="products-slider__arrow splide__arrow splide__arrow--next" type="button">
+							<svg width="29" height="58">
+								<use href="img/sprites.svg#arrow-next"></use>
+							</svg>
+							<svg width="29" height="58">
+								<use href="img/sprites.svg?v=1#arrow-next-filled"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="novelty__footer">
+					<a href="#" class="novelty__link link">
+						SHOW MORE
+					</a>
+				</div>
+			</section>
+			<section class="reviews">
+				<h2 class="visually-hidden">Reviews and Questions</h2>
+				<div class="reviews__header">
+					<div class="reviews__tab-nav">
+						<a href="#reviews" class="reviews__tab-link is-active">
+							Reviews
+						</a>
+						<a href="#questions" class="reviews__tab-link">
+							Questions
+						</a>
+					</div>
+					<div class="reviews__sort">
+						<span class="reviews__sort-label">Sort:</span>
+						<div class="reviews__sort-select">
+							<select name="sort">
+								<option value="by date added">by date added</option>
+								<option value="by date added 2">by date added 2</option>
+								<option value="by date added 3">by date added 3</option>
+							</select>
+							<svg width="12" height="7">
+								<use href="img/sprites.svg#drop-down-arrow-2"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__inner">
+					<div class="reviews__block is-active is-visible" id="reviews">
+						<ul class="reviews__list">
+							<li class="reviews__item reviews-item">
+								<div class="reviews-item__header">
+									<h3 class="reviews-item__name">
+										Jenifer
+										<sub>
+											(7 November)
+										</sub>
+									</h3>
+									<div class="reviews-item__rating" data-value="4">
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="reviews-item__text">
+									<p>
+										The Devari brand reveals the secret of true femininity, creating fashionable, stylish and feminine clothes. The combination of sophisticated classic style and bright original details allows you to create unique images.
+									</p>
+								</div>
+							</li>
+							<li class="reviews__item reviews-item">
+								<div class="reviews-item__header">
+									<h3 class="reviews-item__name">
+										Jenifer
+										<sub>
+											(7 November)
+										</sub>
+									</h3>
+									<div class="reviews-item__rating" data-value="4">
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="reviews-item__text">
+									<p>
+										The Devari brand reveals the secret of true femininity, creating fashionable, stylish and feminine clothes. The combination of sophisticated classic style and bright original details allows you to create unique images.
+									</p>
+								</div>
+							</li>
+							<li class="reviews__item reviews-item">
+								<div class="reviews-item__header">
+									<h3 class="reviews-item__name">
+										Jenifer
+										<sub>
+											(7 November)
+										</sub>
+									</h3>
+									<div class="reviews-item__rating" data-value="4">
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="reviews-item__text">
+									<p>
+										The Devari brand reveals the secret of true femininity, creating fashionable, stylish and feminine clothes. The combination of sophisticated classic style and bright original details allows you to create unique images.
+									</p>
+								</div>
+							</li>
+							<li class="reviews__item reviews-item">
+								<div class="reviews-item__header">
+									<h3 class="reviews-item__name">
+										Jenifer
+										<sub>
+											(7 November)
+										</sub>
+									</h3>
+									<div class="reviews-item__rating" data-value="4">
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="reviews-item__text">
+									<p>
+										The Devari brand reveals the secret of true femininity, creating fashionable, stylish and feminine clothes. The combination of sophisticated classic style and bright original details allows you to create unique images.
+									</p>
+								</div>
+							</li>
+							<li class="reviews__item reviews-item">
+								<div class="reviews-item__header">
+									<h3 class="reviews-item__name">
+										Jenifer
+										<sub>
+											(7 November)
+										</sub>
+									</h3>
+									<div class="reviews-item__rating" data-value="4">
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="reviews-item__text">
+									<p>
+										The Devari brand reveals the secret of true femininity, creating fashionable, stylish and feminine clothes. The combination of sophisticated classic style and bright original details allows you to create unique images.
+									</p>
+								</div>
+							</li>
+						</ul>
+						<div class="reviews__pagination pagination">
+							<a href="#" class="pagination__arrow to-prev">
+								<svg width="11" height="18">
+									<use href="img/sprites.svg#arrow-prev-2"></use>
+								</svg>
+							</a>
+							<div class="pagination__list">
+								<a href="#" class="is-current">
+									1
+								</a>
+								<a href="#">
+									2
+								</a>
+								<a href="#">
+									3
+								</a>
+								<a href="#">
+									4
+								</a>
+								<span>
+									...
+								</span>
+								<a href="#">
+									5
+								</a>
+							</div>
+							<a href="#" class="pagination__arrow to-next">
+								<svg width="11" height="18">
+									<use href="img/sprites.svg#arrow-next-2"></use>
+								</svg>
+							</a>
+						</div>
+						<form class="reviews__form">
+							<h3 class="reviews__form-title">
+								Write a review
+							</h3>
+							<div class="reviews__rating">
+								<input type="radio" name="rating" value="5" required id="rating-5">
+								<label for="rating-5">
+									<svg width="20" height="20">
+										<use href="img/sprites.svg#star"></use>
+									</svg>
+								</label>
+								<input type="radio" name="rating" value="4" required id="rating-4">
+								<label for="rating-4">
+									<svg width="20" height="20">
+										<use href="img/sprites.svg#star"></use>
+									</svg>
+								</label>
+								<input type="radio" name="rating" value="3" required id="rating-3">
+								<label for="rating-3">
+									<svg width="20" height="20">
+										<use href="img/sprites.svg#star"></use>
+									</svg>
+								</label>
+								<input type="radio" name="rating" value="2" required id="rating-2">
+								<label for="rating-2">
+									<svg width="20" height="20">
+										<use href="img/sprites.svg#star"></use>
+									</svg>
+								</label>
+								<input type="radio" name="rating" value="1" required id="rating-1">
+								<label for="rating-1">
+									<svg width="20" height="20">
+										<use href="img/sprites.svg#star"></use>
+									</svg>
+								</label>
+							</div>
+							<label class="reviews__label">
+								<textarea name="message" class="reviews__textarea" placeholder="Leave your review"></textarea>
+							</label>
+							<label class="reviews__label">
+								<input type="text" name="name" placeholder="Name" class="reviews__input">
+							</label>
+							<button class="reviews__submit button is-alt-2" type="submit">
+								Leave feedback
+							</button>
+						</form>
+					</div>
+					<div class="reviews__block" id="questions">
+						<ul class="reviews__list">
+							<li class="reviews__item reviews-item">
+								<div class="reviews-item__header">
+									<h3 class="reviews-item__name">
+										Jenifer
+										<sub>
+											(7 November)
+										</sub>
+									</h3>
+									<div class="reviews-item__rating" data-value="4">
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="reviews-item__text">
+									<p>
+										The Devari brand reveals the secret of true femininity, creating fashionable, stylish and feminine clothes. The combination of sophisticated classic style and bright original details allows you to create unique images.
+									</p>
+								</div>
+							</li>
+							<li class="reviews__item reviews-item">
+								<div class="reviews-item__header">
+									<h3 class="reviews-item__name">
+										Jenifer
+										<sub>
+											(7 November)
+										</sub>
+									</h3>
+									<div class="reviews-item__rating" data-value="4">
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="reviews-item__text">
+									<p>
+										The Devari brand reveals the secret of true femininity, creating fashionable, stylish and feminine clothes. The combination of sophisticated classic style and bright original details allows you to create unique images.
+									</p>
+								</div>
+							</li>
+							<li class="reviews__item reviews-item">
+								<div class="reviews-item__header">
+									<h3 class="reviews-item__name">
+										Jenifer
+										<sub>
+											(7 November)
+										</sub>
+									</h3>
+									<div class="reviews-item__rating" data-value="4">
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="reviews-item__text">
+									<p>
+										The Devari brand reveals the secret of true femininity, creating fashionable, stylish and feminine clothes. The combination of sophisticated classic style and bright original details allows you to create unique images.
+									</p>
+								</div>
+							</li>
+							<li class="reviews__item reviews-item">
+								<div class="reviews-item__header">
+									<h3 class="reviews-item__name">
+										Jenifer
+										<sub>
+											(7 November)
+										</sub>
+									</h3>
+									<div class="reviews-item__rating" data-value="4">
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="reviews-item__text">
+									<p>
+										The Devari brand reveals the secret of true femininity, creating fashionable, stylish and feminine clothes. The combination of sophisticated classic style and bright original details allows you to create unique images.
+									</p>
+								</div>
+							</li>
+							<li class="reviews__item reviews-item">
+								<div class="reviews-item__header">
+									<h3 class="reviews-item__name">
+										Jenifer
+										<sub>
+											(7 November)
+										</sub>
+									</h3>
+									<div class="reviews-item__rating" data-value="4">
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+										<svg width="20" height="20">
+											<use href="img/sprites.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="reviews-item__text">
+									<p>
+										The Devari brand reveals the secret of true femininity, creating fashionable, stylish and feminine clothes. The combination of sophisticated classic style and bright original details allows you to create unique images.
+									</p>
+								</div>
+							</li>
+						</ul>
+						<div class="reviews__pagination pagination">
+							<a href="#" class="pagination__arrow to-prev">
+								<svg width="11" height="18">
+									<use href="img/sprites.svg#arrow-prev-2"></use>
+								</svg>
+							</a>
+							<div class="pagination__list">
+								<a href="#" class="is-current">
+									1
+								</a>
+								<a href="#">
+									2
+								</a>
+								<a href="#">
+									3
+								</a>
+								<a href="#">
+									4
+								</a>
+								<span>
+									...
+								</span>
+								<a href="#">
+									5
+								</a>
+							</div>
+							<a href="#" class="pagination__arrow to-next">
+								<svg width="11" height="18">
+									<use href="img/sprites.svg#arrow-next-2"></use>
+								</svg>
+							</a>
+						</div>
+						<form class="reviews__form">
+							<h3 class="reviews__form-title">
+								Write a question
+							</h3>
+							<label class="reviews__label">
+								<textarea name="message" class="reviews__textarea" placeholder="Leave your quetion"></textarea>
+							</label>
+							<label class="reviews__label">
+								<input type="text" name="name" placeholder="Name" class="reviews__input">
+							</label>
+							<button class="reviews__submit button is-alt-2" type="submit">
+								Leave question
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__contact footer-block">
+				<b class="footer-block__title">contact</b>
+				<a href="mailto:info@marin.com" class="footer__contact-email" aria-label="email: info@marin.com">
+					<svg width="25" height="25">
+						<use href="img/sprites.svg#email"></use>
+					</svg>
+					<span>E-mail. info@marin.com</span>
+				</a>
+				<a href="index.html" class="footer__contact-logo">
+					MARIN
+				</a>
+				<div class="footer__copyright">
+					Copyright © 2024 All rights reserved.
+				</div>
+			</div>
+			<nav class="footer__nav footer-block">
+				<b class="footer-block__title">FOR BUYERS</b>
+				<ul>
+					<li>
+						<a href="about.html">
+							About Us
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Shipping and payment
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							The shops
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Brands
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer__subscribe footer-block">
+				<b class="footer-block__title">Subscribe</b>
+				<ul>
+					<li>
+						<a href="#" aria-label="About Us" target="_blank">
+							<svg width="40" height="40">
+								<use href="img/sprites.svg#instagram"></use>
+							</svg>
+							<span>About Us</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="Twitter" target="_blank">
+							<svg width="40" height="40">
+								<use href="img/sprites.svg#twitter"></use>
+							</svg>
+							<span>Twitter</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="Facebook" target="_blank">
+							<svg width="40" height="40">
+								<use href="img/sprites.svg#facebook"></use>
+							</svg>
+							<span>Facebook</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__join footer-block">
+				<b class="footer-block__title">JOIN</b>
+				<div class="footer__join-text">
+					<p>
+						Subscribe to the newsletter of hot discounts and promotions from Marin
+					</p>
+				</div>
+				<form method="post" class="footer__join-form">
+					<input type="email" name="email" placeholder="Enter your email address" required>
+					<button type="submit" aria-label="Send">
+						<svg width="15" height="30">
+							<use href="img/sprites.svg?v=2#send-arrow"></use>
+						</svg>
+						<svg width="15" height="30">
+							<use href="img/sprites.svg?v=2#send-arrow-filled"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
+		</footer>
+	</div>
+
+	<div class="auth popup" id="login-popup" style="display: none;">
+		<div class="auth__wrapper popup-wrapper">
+			<div class="auth__bg popup-bg popup-close"></div>
+			<div class="auth__body popup-body">
+				<button type="button" class="auth__close-btn popup-close-btn popup-close" title="Close">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<form class="auth__container popup-container">
+					<h2 class="auth__title">Вход в личный кабинет</h2>
+					<label class="auth__label">
+						<input type="tel" name="phone" placeholder="Номер телефона" required class="auth__input">
+					</label>
+					<label class="auth__label">
+						<input type="password" name="password" placeholder="Пароль" required class="auth__input">
+					</label>
+					<div class="auth__form-links">
+						<a href="#recovery-password-popup" class="auth__form-link popup-close open-popup">Забыли пароль?</a>
+						<a href="#register-popup" class="auth__form-link popup-close open-popup"><u>Регистрация</u></a>
+					</div>
+					<div class="auth__form-footer">
+						<button class="auth__submit button" type="submit">
+							Вход
+						</button>
+						<button class="auth__close button is-alt popup-close" type="button">
+							Отмена
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="auth popup" id="register-popup" style="display: none;">
+		<div class="auth__wrapper popup-wrapper">
+			<div class="auth__bg popup-bg popup-close"></div>
+			<div class="auth__body popup-body">
+				<button type="button" class="auth__close-btn popup-close-btn popup-close" title="Close">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<form class="auth__container popup-container">
+					<h2 class="auth__title">Регистрация</h2>
+					<label class="auth__label">
+						<input type="text" name="name" placeholder="ФИО" required class="auth__input">
+					</label>
+					<label class="auth__label">
+						<input type="tel" name="phone" placeholder="Номер телефона" required class="auth__input">
+					</label>
+					<label class="auth__label">
+						<input type="password" name="password" placeholder="Пароль" required class="auth__input">
+					</label>
+					<label class="auth__radio">
+						<input type="radio" name="privacy" required class="auth__radio-input">
+						<span class="auth__radio-element"></span>
+						<span class="auth__radio-text">
+							Ознакомлен с политикой конфиденфиальности
+						</span>
+					</label>
+					<div class="auth__form-footer">
+						<button class="auth__submit button is-transparent" type="submit">
+							Отправить пароль
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="auth popup" id="recovery-password-popup" style="display: none;">
+		<div class="auth__wrapper popup-wrapper">
+			<div class="auth__bg popup-bg popup-close"></div>
+			<div class="auth__body popup-body">
+				<button type="button" class="auth__close-btn popup-close-btn popup-close" title="Close">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<form class="auth__container popup-container">
+					<h2 class="auth__title">Восстановление пароля</h2>
+					<div class="auth__text">
+						<p>
+							<small>
+								Введите ноер телефона, который вы использовали при регистрации. <br>
+								Вам будет отправленно сообщение с паролем.
+							</small>
+						</p>
+					</div>
+					<label class="auth__label">
+						<input type="tel" name="phone" placeholder="+38 (096) 000-00-00" required class="auth__input txt-center">
+					</label>
+					<div class="auth__text">
+						<p>
+							Указанный номер телефона, не найден <br><br>
+							<a href="#change-password-popup" class="open-popup popup-close"><u>Открыть попап с изменением пароля</u></a>
+						</p>
+					</div>
+					<div class="auth__form-footer">
+						<button class="auth__submit button is-transparent" type="submit">
+							Отправить
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="auth popup" id="change-password-popup" style="display: none;">
+		<div class="auth__wrapper popup-wrapper">
+			<div class="auth__bg popup-bg popup-close"></div>
+			<div class="auth__body popup-body">
+				<button type="button" class="auth__close-btn popup-close-btn popup-close" title="Close">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<form class="auth__container popup-container">
+					<h2 class="auth__title">Изменение пароля</h2>
+					<label class="auth__label">
+						<input type="password" name="password" placeholder="Пароль" id="password-input" required class="auth__input">
+					</label>
+					<label class="auth__label">
+						<input type="password" name="password-confirmation" placeholder="Подтверждение пароля" required class="auth__input">
+					</label>
+					<div class="auth__password-quality">
+						<span class="auth__password-quality-label">Качество пароля</span>
+						<div class="auth__password-quality-params" data-quality="0" data-for="password-input">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="auth__form-footer">
+						<button class="auth__submit button is-transparent" type="submit">
+							Подтвердить
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="cart-popup popup side-mode" id="cart-popup" style="display: none;">
+		<div class="cart-popup__wrapper popup-wrapper">
+			<div class="cart-popup__bg popup-bg popup-close"></div>
+			<div class="cart-popup__body popup-body">
+				<button type="button" class="cart-popup__close-btn popup-close-btn popup-close" title="Close cart">
+					<span>closed</span>
+					<svg width="16" height="16">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<div class="cart-popup__container popup-container">
+					<h2 class="cart-popup__title">Cart (2)</h2>
+					<div class="cart-popup__note is-accent">
+						<svg width="19" height="19">
+							<use href="img/sprites.svg#delivery"></use>
+						</svg>
+						<span>Free shipping!</span>
+					</div>
+					<div class="cart-popup__note">
+						Discount does not apply to promotional items
+					</div>
+					<div class="cart-popup__inner">
+						<ul class="cart-popup__list">
+							<li class="cart-popup__item cart-item">
+								<div class="cart-item__inner">
+									<a href="single-product.html" class="cart-item__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="71" height="95" class="image-aspect-ratio" style="--aspect-ratio: 71/95" loading="lazy">
+										</picture>
+									</a>
+									<div class="cart-item__content">
+										<h3 class="cart-item__title">Seamless short sleeve top</h3>
+										<div class="cart-item__settings">
+											<p>Green: S-M</p>
+										</div>
+										<div class="cart-item__footer">
+											<div class="cart-item__settings">
+												<p>Green: S-M</p>
+											</div>
+											<div class="cart-item__quantity">
+												<button type="button" class="cart-item__quantity-minus"></button>
+												<input type="text" inputmode="numeric" value="1" max="10" placeholder="0" name="quantity">
+												<button type="button" class="cart-item__quantity-plus"></button>
+											</div>
+											<div class="cart-item__article">Article: 451287</div>
+											<div class="cart-item__price">
+												<del>1450 грн</del>
+												<ins>2 340грн</ins>
+												<!-- <strong></strong> -->
+											</div>
+										</div>
+									</div>
+									<button class="cart-item__remove" type="button" aria-label="Remove">
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#close"></use>
+										</svg>
+									</button>
+								</div>
+							</li>
+							<li class="cart-popup__item cart-item">
+								<div class="cart-item__inner">
+									<a href="single-product.html" class="cart-item__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="71" height="95" class="image-aspect-ratio" style="--aspect-ratio: 71/95" loading="lazy">
+										</picture>
+									</a>
+									<div class="cart-item__content">
+										<h3 class="cart-item__title">Seamless short sleeve top</h3>
+										<div class="cart-item__settings">
+											<p>Green: S-M</p>
+										</div>
+										<div class="cart-item__footer">
+											<div class="cart-item__settings">
+												<p>Green: S-M</p>
+											</div>
+											<div class="cart-item__quantity">
+												<button type="button" class="cart-item__quantity-minus"></button>
+												<input type="text" inputmode="numeric" value="1" max="10" placeholder="0" name="quantity">
+												<button type="button" class="cart-item__quantity-plus"></button>
+											</div>
+											<div class="cart-item__article">Article: 451287</div>
+											<div class="cart-item__price">
+												<del>1450 грн</del>
+												<ins>2 340грн</ins>
+												<!-- <strong></strong> -->
+											</div>
+										</div>
+									</div>
+									<button class="cart-item__remove" type="button" aria-label="Remove">
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#close"></use>
+										</svg>
+									</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="cart-popup__total">
+						<span>Order price:</span>
+						<strong>7 500 $</strong>
+					</div>
+					<a href="#" class="cart-popup__button button is-submit">
+						Placing an order
+					</a>
+					<a href="#" class="cart-popup__button button is-transparent">
+						View cart
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cart-popup popup side-mode" id="favorites-popup" style="display: none;">
+		<div class="cart-popup__wrapper popup-wrapper">
+			<div class="cart-popup__bg popup-bg popup-close"></div>
+			<div class="cart-popup__body popup-body">
+				<button type="button" class="cart-popup__close-btn popup-close-btn popup-close" title="Close cart">
+					<span>closed</span>
+					<svg width="16" height="16">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<div class="cart-popup__container popup-container">
+					<h2 class="cart-popup__title">Favorites (2)</h2>
+					<div class="cart-popup__note is-accent">
+						<svg width="19" height="19">
+							<use href="img/sprites.svg#delivery"></use>
+						</svg>
+						<span>Free shipping!</span>
+					</div>
+					<div class="cart-popup__note">
+						Discount does not apply to promotional items
+					</div>
+					<div class="cart-popup__inner">
+						<ul class="cart-popup__list">
+							<li class="cart-popup__item cart-item">
+								<div class="cart-item__inner">
+									<a href="single-product.html" class="cart-item__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="71" height="95" class="image-aspect-ratio" style="--aspect-ratio: 71/95" loading="lazy">
+										</picture>
+									</a>
+									<div class="cart-item__content">
+										<h3 class="cart-item__title">Seamless short sleeve top</h3>
+										<div class="cart-item__article">Article: 451287</div>
+									</div>
+									<button class="cart-item__remove" type="button" aria-label="Remove">
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#close"></use>
+										</svg>
+									</button>
+								</div>
+							</li>
+							<li class="cart-popup__item cart-item">
+								<div class="cart-item__inner">
+									<a href="single-product.html" class="cart-item__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="71" height="95" class="image-aspect-ratio" style="--aspect-ratio: 71/95" loading="lazy">
+										</picture>
+									</a>
+									<div class="cart-item__content">
+										<h3 class="cart-item__title">Seamless short sleeve top</h3>
+										<div class="cart-item__article">Article: 451287</div>
+									</div>
+									<button class="cart-item__remove" type="button" aria-label="Remove">
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#close"></use>
+										</svg>
+									</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>

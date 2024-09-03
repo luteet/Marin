@@ -1,0 +1,83 @@
+
+@font-face {
+	@include font-include('Playfair Display', 400, swap, normal, 'PlayfairDisplay-Regular');
+}
+
+@font-face {
+	@include font-include('Playfair Display', 500, swap, normal, 'PlayfairDisplay-Medium');
+}
+
+@font-face {
+	@include font-include('Playfair Display', 600, swap, normal, 'PlayfairDisplay-SemiBold');
+}
+
+@font-face {
+	@include font-include('Playfair Display', 700, swap, normal, 'PlayfairDisplay-Bold');
+}
+
+@font-face {
+	@include font-include('Montserrat', 300, swap, normal, 'Montserrat-Light');
+}
+
+@font-face {
+	@include font-include('Montserrat', 400, swap, normal, 'Montserrat-Regular');
+}
+
+@font-face {
+	@include font-include('Montserrat', 500, swap, normal, 'Montserrat-Medium');
+}
+
+.main-title {
+	font-family: var(--title-font);
+	font-weight: 700;
+	line-height: 115%;
+
+	font-size: 1.875rem;
+
+	@include _768 {
+		font-size: 2.5rem;
+	}
+
+	@include _992 {
+		font-size: 3.125rem;
+	}
+}
+
+.title {
+	
+	font-family: var(--title-font);
+	font-weight: 700;
+
+	font-size: 1.125rem;
+
+	@include _768 {
+		font-size: 1.5rem;
+	}
+
+	@include _992 {
+		font-size: 1.875rem;
+	}
+
+}
+
+.section-title {
+
+	font-family: var(--title-font);
+	font-weight: 400;
+	font-size: 2.25rem;
+	line-height: 132.8125%;
+	color: var(--black);
+
+	@include _550 {
+		font-size: 3rem;
+	}
+	
+	@include _992 {
+		font-size: 4rem;
+	}
+
+}
+
+.txt-center {
+	text-align: center;
+}

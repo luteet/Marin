@@ -1,0 +1,66 @@
+
+.account-catalog {
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.625rem 1.875rem;
+
+	padding-top: 1.5rem;
+
+	// .account-catalog__item
+
+	&__item {
+		display: block;
+	}
+
+	// .account-catalog__item-inner
+
+	&__item-inner {
+		display: grid;
+		grid-template-columns: 11.5625rem auto;
+		gap: 0 1.5625rem;
+
+		color: #444;
+		border: 0.0625rem solid #EEEEEE;
+
+		width: 100%;
+
+		@media (hover: hover) {
+
+			transition: color .2s, border-color .2s;
+
+			&:hover {
+				color: var(--accent);
+				border-color: var(--accent);
+			}
+		
+			&:active {
+				color: var(--accent-active);
+				border-color: var(--accent-active);
+			}
+		}
+	}
+
+	// .account-catalog__item-image
+
+	&__item-image {
+	}
+
+	// .account-catalog__item-content
+
+	&__item-content {
+
+		font-size: 1.125rem;
+		line-height: 125%;
+
+		padding-top: 3.125rem;
+
+		p:not(:first-child) {
+			padding-top: 0.5rem;
+		}
+
+		b, strong {
+			font-weight: 600;
+		}
+	}
+}

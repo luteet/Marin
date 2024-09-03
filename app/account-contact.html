@@ -1,0 +1,51 @@
+@@include("html/_header.html")
+
+	<div class="breadcrumbs container">
+		<a href="#" class="breadcrumbs__link">Home</a>
+		<span class="breadcrumbs__separator">|</span>
+		<span class="breadcrumbs__current">News</span>
+	</div>
+
+	<main class="main">
+		<section class="account">
+			@@include("html/_account-aside.html")
+			<div class="account__main">
+				<h1 class="account__title">
+					Contact details
+				</h1>
+				<div class="account__contact account-contact">
+					<div class="account-contact__avatar">
+						<div class="account-contact__avatar-inner">
+							<picture>
+								<source srcset="img/account/account-none-avatar.avif" type="image/avif">
+								<source srcset="img/account/account-none-avatar.webp" type="image/webp">
+								<img src="img/account/account-none-avatar.png" alt="" width="135" height="135" class="image-aspect-ratio" style="--aspect-ratio: 135/135;" loading="lazy">
+							</picture>
+						</div>
+						<a href="#" class="account-contact__avatar-download">
+							Download
+						</a>
+					</div>
+					<div class="account-contact__info">
+						<div class="account-contact__name">
+							<h2>Ivanova Ivan Ivanovna</h2>
+							<button class="account-contact__edit" type="button" aria-label="Edit">
+								<svg width="14" height="14">
+									<use href="img/sprites.svg#edit"></use>
+								</svg>
+								<span>
+									Edit
+								</span>
+							</button>
+						</div>
+						<ul class="account-contact__info-list">
+							<li>customer@mail.com</li>
+							<li>380545547312</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+@@include("html/_footer.html")

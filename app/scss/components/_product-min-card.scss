@@ -1,0 +1,48 @@
+.product-min-card {
+
+	// .product-min-card__inner
+
+	&__inner {
+		display: block;
+	}
+
+	&__image {
+		display: block;
+		overflow: hidden;
+
+		img {
+			transition: transform .3s;
+		}
+	}
+
+	@media (hover: hover) {
+
+		&__inner:hover &__image img {
+			transform: scale(1.1);
+		}
+
+		&__inner:hover &__name {
+			color: var(--accent);
+		}
+	
+		&__inner:active &__image img {
+			transform: scale(1.05);
+		}
+
+		&__inner:active &__name {
+			color: var(--accent-active);
+		}
+	}
+
+	// .product-min-card__name
+
+	&__name {
+		font-size: 1rem;
+		line-height: 131%;
+		color: #737373;
+
+		padding-top: 0.5625rem;
+
+		transition: color .2s;
+	}
+}

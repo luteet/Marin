@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#E2DDD2">
+	<title>MARIN</title>
+	<link rel="stylesheet" href="css/style.min.css?v=1">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__inner">
+				<div class="header__logo visible-on-desktop">
+					<a href="index.html" class="header__logo-link">
+						<picture>
+							<source srcset="img/logo.avif" type="image/avif">
+							<source srcset="img/logo.webp" type="image/webp">
+							<img src="img/logo.png" alt="Logo" width="205" height="42" loading="lazy" class="header__logo-img">
+						</picture>
+					</a>
+				</div>
+				<nav class="header__nav">
+					<div class="header__nav-body">
+						<div class="header__nav-top visible-on-mob">
+							<div class="header__user">
+								<a href="#login-popup" class="header__user-target open-popup" aria-label="User">
+									<svg width="31" height="31">
+										<use href="img/sprites.svg#user"></use>
+									</svg>
+									<span>
+										Jenifer
+									</span>
+								</a>
+							</div>
+							<div class="header__drop-down header__lang">
+								<button class="header__drop-down-target" aria-label="En">
+									<span>En</span>
+									<svg width="7" height="5">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</button>
+								<ul class="header__drop-down-list">
+									<li>
+										<a href="#">
+											Ru
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Ua
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="header__drop-down header__currency">
+								<button class="header__drop-down-target" aria-label="ГРН">
+									<span>ГРН</span>
+									<svg width="7" height="5">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</button>
+								<ul class="header__drop-down-list">
+									<li>
+										<a href="#">
+											EUR
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<ul class="header__nav-list">
+							<li>
+								<a href="index.html" class="is-current">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="products.html">
+									Shop
+								</a>
+							</li>
+							<li>
+								<a href="#" aria-label="Info">
+									<span>Info</span>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</a>
+								<div>
+									<ul>
+										<li><a href="#">Delivery and payment</a></li>
+										<li><a href="#">Returns and exchanges</a></li>
+										<li><a href="#">Contacts</a></li>
+										<li><a href="#">About us</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<div class="header__nav-bottom visible-on-mob">
+							<div class="header__subscribe">
+								<a href="#" class="header__subscribe-target">
+									subscribe
+								</a>
+							</div>
+							<ul class="header__social">
+								<li>
+									<a href="#" aria-label="Instagram" target="_blank">
+										<svg width="40" height="40">
+											<use href="img/sprites.svg#instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Twitter" target="_blank">
+										<svg width="40" height="40">
+											<use href="img/sprites.svg#twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Facebook" target="_blank">
+										<svg width="40" height="40">
+											<use href="img/sprites.svg#facebook"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<div class="header__add">
+					<div class="header__drop-down header__lang visible-on-desktop">
+						<button class="header__drop-down-target" aria-label="En">
+							<span>En</span>
+							<svg width="7" height="5">
+								<use href="img/sprites.svg#drop-down-arrow"></use>
+							</svg>
+						</button>
+						<ul class="header__drop-down-list">
+							<li>
+								<a href="#">
+									Ru
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Ua
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header__drop-down header__currency visible-on-desktop">
+						<button class="header__drop-down-target" aria-label="ГРН">
+							<span>ГРН</span>
+							<svg width="7" height="5">
+								<use href="img/sprites.svg#drop-down-arrow"></use>
+							</svg>
+						</button>
+						<ul class="header__drop-down-list">
+							<li>
+								<a href="#">
+									EUR
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header__search">
+						<button class="header__search-target" aria-label="Search">
+							<svg width="35" height="35">
+								<use href="img/sprites.svg#search"></use>
+							</svg>
+						</button>
+						<form class="header__search-form container">
+							<input type="search" name="search" placeholder="Search" required class="header__search-input">
+						</form>
+					</div>
+					<div class="header__favorites">
+						<a href="#favorites-popup" class="header__favorites-target open-popup" data-length="4" aria-label="Favorites">
+							<svg width="28" height="27">
+								<use href="img/sprites.svg#favorites"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="header__logo visible-on-mob">
+						<a href="index.html" class="header__logo-link">
+							<picture>
+								<source srcset="img/logo.avif" type="image/avif">
+								<source srcset="img/logo.webp" type="image/webp">
+								<img src="img/logo.png" alt="Logo" width="205" height="42" loading="lazy" class="header__logo-img">
+							</picture>
+						</a>
+					</div>
+					<div class="header__user visible-on-desktop">
+						<a href="#login-popup" class="header__user-target open-popup" aria-label="User">
+							<svg width="31" height="31">
+								<use href="img/sprites.svg#user"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="header__cart">
+						<a href="#cart-popup" class="header__cart-target open-popup" data-length="4" aria-label="Cart">
+							<svg width="28" height="28">
+								<use href="img/sprites.svg#cart"></use>
+							</svg>
+						</a>
+					</div>
+					<button class="header__burger" type="button" aria-label="Menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<div class="breadcrumbs container">
+			<a href="#" class="breadcrumbs__link">Home</a>
+			<span class="breadcrumbs__separator">|</span>
+			<a href="#" class="breadcrumbs__link">Catalog</a>
+			<span class="breadcrumbs__separator">|</span>
+			<span class="breadcrumbs__current">Seamless short sleeve top</span>
+		</div>
+
+		<main class="main is-visible">
+			<section class="products">
+				<h1 class="products__title">
+					Seamless short sleeve top
+				</h1>
+				<div class="products__inner">
+					<div class="products__aside">
+						<div class="products__aside-background visible-on-mob"></div>
+						<div class="products__aside-inner">
+							<h2 class="products__aside-title visible-on-mob">Filters</h2>
+							<div class="products__categories products-categories">
+								<div class="products-categories__block">
+									<h2 class="products-categories__title">
+										Categories
+									</h2>
+									<ul class="products-categories__list">
+										<li class="products-categories__item">
+											<a href="#">Cloth</a>
+										</li>
+										<li class="products-categories__item">
+											<a href="#">Dresses</a>
+										</li>
+										<li class="products-categories__item">
+											<a href="#">Outerwear</a>
+											<ul>
+												<li><a href="#">See all</a></li>
+												<li><a href="#">Quilted coats</a></li>
+												<li><a href="#">Jackets</a></li>
+												<li><a href="#">Fur coats</a></li>
+												<li><a href="#">Sheepskin coats</a></li>
+												<li><a href="#">Bombers</a></li>
+												<li><a href="#">Leather jackets</a></li>
+												<li><a href="#">Vests</a></li>
+												<li><a href="#">Jackets-shirts</a></li>
+												<li><a href="#">Windbreakers</a></li>
+											</ul>
+										</li>
+										<li class="products-categories__item">
+											<a href="#">Sweaters and jumpers</a>
+										</li>
+										<li class="products-categories__item">
+											<a href="#">Evening Dress code</a>
+										</li>
+										<li class="products-categories__item">
+											<a href="#">New classics</a>
+										</li>
+										<li class="products-categories__item">
+											<a href="#">Shoes and accessories</a>
+										</li>
+									</ul>
+								</div>
+								<div class="products-categories__block">
+									<h2 class="products-categories__title">
+										Price
+									</h2>
+									<div class="products-categories__range" data-min="100" data-max="2000" data-value-start="250" data-value-end="1000">
+										<div class="products-categories__range-element"></div>
+										<div class="products-categories__range-footer">
+											<input type="text" name="price-min" inputmode="numeric">
+											<span>-</span>
+											<input type="text" name="price-max" inputmode="numeric">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products__sort products-sort visible-on-mob">
+								<div class="products-sort__item">
+									<a href="#" class="products-sort__link">
+										See all
+									</a>
+								</div>
+								<div class="products-sort__item">
+									<div class="products-sort__select">
+										<select name="sort">
+											<option value="" disabled selected>Sort by</option>
+											<option value="sort-1">Sort 1</option>
+											<option value="sort-2">Sort 2</option>
+											<option value="sort-3">Sort 3</option>
+										</select>
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#drop-down-arrow"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="products-sort__item">
+									<div class="products-sort__select">
+										<select name="dimensions">
+											<option value="" disabled selected>Dimensions</option>
+											<option value="dimensions-1">Dimensions 1</option>
+											<option value="dimensions-2">Dimensions 2</option>
+											<option value="dimensions-3">Dimensions 3</option>
+										</select>
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#drop-down-arrow"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="products-sort__item">
+									<div class="products-sort__select">
+										<select name="price">
+											<option value="" disabled selected>Price</option>
+											<option value="price-1">Price 1</option>
+											<option value="price-2">Price 2</option>
+											<option value="price-3">Price 3</option>
+										</select>
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#drop-down-arrow"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="products-sort__item">
+									<div class="products-sort__select">
+										<select name="characteristics">
+											<option value="" disabled selected>Characteristics</option>
+											<option value="characteristics-1">Characteristics 1</option>
+											<option value="characteristics-2">Characteristics 2</option>
+											<option value="characteristics-3">Characteristics 3</option>
+										</select>
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#drop-down-arrow"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="products-sort__item">
+									<div class="products-sort__select">
+										<select name="colors">
+											<option value="" disabled selected>Colors</option>
+											<option value="colors-1">Colors 1</option>
+											<option value="colors-2">Colors 2</option>
+											<option value="colors-3">Colors 3</option>
+										</select>
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#drop-down-arrow"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<button class="products__aside-results visible-on-mob" type="button">
+								Result 26
+							</button>
+						</div>
+						<button class="products__aside-close visible-on-mob" type="button" aria-label="Close">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg#close"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="products__main">
+						<div class="products__main-header">
+							<div class="products__sort products-sort visible-on-desktop">
+								<div class="products-sort__item">
+									<a href="#" class="products-sort__link">
+										See all
+									</a>
+								</div>
+								<div class="products-sort__item">
+									<div class="products-sort__select">
+										<select name="sort">
+											<option value="" disabled selected>Sort by</option>
+											<option value="sort-1">Sort 1</option>
+											<option value="sort-2">Sort 2</option>
+											<option value="sort-3">Sort 3</option>
+										</select>
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#drop-down-arrow"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="products-sort__item">
+									<div class="products-sort__select">
+										<select name="dimensions">
+											<option value="" disabled selected>Dimensions</option>
+											<option value="dimensions-1">Dimensions 1</option>
+											<option value="dimensions-2">Dimensions 2</option>
+											<option value="dimensions-3">Dimensions 3</option>
+										</select>
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#drop-down-arrow"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="products-sort__item">
+									<div class="products-sort__select">
+										<select name="price">
+											<option value="" disabled selected>Price</option>
+											<option value="price-1">Price 1</option>
+											<option value="price-2">Price 2</option>
+											<option value="price-3">Price 3</option>
+										</select>
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#drop-down-arrow"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="products-sort__item">
+									<div class="products-sort__select">
+										<select name="characteristics">
+											<option value="" disabled selected>Characteristics</option>
+											<option value="characteristics-1">Characteristics 1</option>
+											<option value="characteristics-2">Characteristics 2</option>
+											<option value="characteristics-3">Characteristics 3</option>
+										</select>
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#drop-down-arrow"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="products-sort__item">
+									<div class="products-sort__select">
+										<select name="colors">
+											<option value="" disabled selected>Colors</option>
+											<option value="colors-1">Colors 1</option>
+											<option value="colors-2">Colors 2</option>
+											<option value="colors-3">Colors 3</option>
+										</select>
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#drop-down-arrow"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="products__quantity">
+								99 products
+							</div>
+							<a href="products.html" class="products__clear-filter visible-on-desktop" aria-label="Clear filters" type="button">
+								<svg width="16" height="16">
+									<use href="img/sprites.svg#close"></use>
+								</svg>
+								<span>Clear filters</span>
+							</a>
+							<button type="button" class="products__filter-open visible-on-mob" aria-label="Filters">
+								<svg width="17" height="17">
+									<use href="img/sprites.svg#filter"></use>
+								</svg>
+								<span>
+									Filters
+								</span>
+							</button>
+						</div>
+						<ul class="products__list">
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-2.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-2.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-2.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-3.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-3.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-3.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-4.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-4.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-4.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-2.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-2.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-2.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-3.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-3.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-3.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-4.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-4.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-4.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-2.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-2.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-2.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-3.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-3.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-3.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-4.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-4.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-4.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-2.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-2.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-2.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-3.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-3.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-3.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-4.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-4.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-4.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-2.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-2.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-2.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-3.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-3.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-3.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-4.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-4.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-4.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-2.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-2.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-2.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-3.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-3.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-3.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+							<li class="products-card splide__slide">
+								<a href="single-product.html" class="products-card__inner" aria-label="Lorem ipsum dolor sit amet, consectetuer adipiscing">
+									<div class="products-card__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-4.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-4.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-4.jpg" alt="" width="356" height="489" class="image-aspect-ratio" style="--aspect-ratio: 356/489;" loading="lazy">
+										</picture>
+									</div>
+									<h3 class="products-card__title">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing
+									</h3>
+									<strong class="products-card__price">
+										120$
+									</strong>
+								</a>
+							</li>
+						</ul>
+						<div class="products__footer">
+							<button class="products__load-more button is-transparent-2" type="button">Load more</button>
+							<div class="products__pagination pagination">
+								<a href="#" class="pagination__arrow to-prev">
+									<svg width="11" height="18">
+										<use href="img/sprites.svg#arrow-prev-2"></use>
+									</svg>
+								</a>
+								<div class="pagination__list">
+									<a href="#" class="is-current">
+										1
+									</a>
+									<a href="#">
+										2
+									</a>
+									<a href="#">
+										3
+									</a>
+									<a href="#">
+										4
+									</a>
+									<span>
+										...
+									</span>
+									<a href="#">
+										5
+									</a>
+								</div>
+								<a href="#" class="pagination__arrow to-next">
+									<svg width="11" height="18">
+										<use href="img/sprites.svg#arrow-next-2"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="products__note">
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__contact footer-block">
+				<b class="footer-block__title">contact</b>
+				<a href="mailto:info@marin.com" class="footer__contact-email" aria-label="email: info@marin.com">
+					<svg width="25" height="25">
+						<use href="img/sprites.svg#email"></use>
+					</svg>
+					<span>E-mail. info@marin.com</span>
+				</a>
+				<a href="index.html" class="footer__contact-logo">
+					MARIN
+				</a>
+				<div class="footer__copyright">
+					Copyright © 2024 All rights reserved.
+				</div>
+			</div>
+			<nav class="footer__nav footer-block">
+				<b class="footer-block__title">FOR BUYERS</b>
+				<ul>
+					<li>
+						<a href="about.html">
+							About Us
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Exchange
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Shipping and payment
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Return
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer__subscribe footer-block">
+				<b class="footer-block__title">Subscribe</b>
+				<ul>
+					<li>
+						<a href="#" aria-label="About Us" target="_blank">
+							<svg width="40" height="40">
+								<use href="img/sprites.svg#instagram"></use>
+							</svg>
+							<span>About Us</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="Facebook" target="_blank">
+							<svg width="40" height="40">
+								<use href="img/sprites.svg#facebook"></use>
+							</svg>
+							<span>Facebook</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	<div class="auth popup" id="login-popup" style="display: none;">
+		<div class="auth__wrapper popup-wrapper">
+			<div class="auth__bg popup-bg popup-close"></div>
+			<div class="auth__body popup-body">
+				<button type="button" class="auth__close-btn popup-close-btn popup-close" title="Close">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<form class="auth__container popup-container">
+					<h2 class="auth__title">Вход в личный кабинет</h2>
+					<label class="auth__label">
+						<input type="tel" name="phone" placeholder="Номер телефона" required class="auth__input">
+					</label>
+					<label class="auth__label">
+						<input type="password" name="password" placeholder="Пароль" required class="auth__input">
+					</label>
+					<div class="auth__form-links">
+						<a href="#recovery-password-popup" class="auth__form-link popup-close open-popup">Забыли пароль?</a>
+						<a href="#register-popup" class="auth__form-link popup-close open-popup"><u>Регистрация</u></a>
+					</div>
+					<div class="auth__form-footer">
+						<button class="auth__submit button" type="submit">
+							Вход
+						</button>
+						<button class="auth__close button is-alt popup-close" type="button">
+							Отмена
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="auth popup" id="register-popup" style="display: none;">
+		<div class="auth__wrapper popup-wrapper">
+			<div class="auth__bg popup-bg popup-close"></div>
+			<div class="auth__body popup-body">
+				<button type="button" class="auth__close-btn popup-close-btn popup-close" title="Close">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<form class="auth__container popup-container">
+					<h2 class="auth__title">Регистрация</h2>
+					<label class="auth__label">
+						<input type="text" name="name" placeholder="ФИО" required class="auth__input">
+					</label>
+					<label class="auth__label">
+						<input type="tel" name="phone" placeholder="Номер телефона" required class="auth__input">
+					</label>
+					<label class="auth__label">
+						<input type="password" name="password" placeholder="Пароль" required class="auth__input">
+					</label>
+					<label class="auth__radio">
+						<input type="radio" name="privacy" required class="auth__radio-input">
+						<span class="auth__radio-element"></span>
+						<span class="auth__radio-text">
+							Ознакомлен с политикой конфиденфиальности
+						</span>
+					</label>
+					<div class="auth__form-footer">
+						<button class="auth__submit button is-transparent" type="submit">
+							Отправить пароль
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="auth popup" id="recovery-password-popup" style="display: none;">
+		<div class="auth__wrapper popup-wrapper">
+			<div class="auth__bg popup-bg popup-close"></div>
+			<div class="auth__body popup-body">
+				<button type="button" class="auth__close-btn popup-close-btn popup-close" title="Close">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<form class="auth__container popup-container">
+					<h2 class="auth__title">Восстановление пароля</h2>
+					<div class="auth__text">
+						<p>
+							<small>
+								Введите ноер телефона, который вы использовали при регистрации. <br>
+								Вам будет отправленно сообщение с паролем.
+							</small>
+						</p>
+					</div>
+					<label class="auth__label">
+						<input type="tel" name="phone" placeholder="+38 (096) 000-00-00" required class="auth__input txt-center">
+					</label>
+					<div class="auth__text">
+						<p>
+							Указанный номер телефона, не найден <br><br>
+							<a href="#change-password-popup" class="open-popup popup-close"><u>Открыть попап с изменением пароля</u></a>
+						</p>
+					</div>
+					<div class="auth__form-footer">
+						<button class="auth__submit button is-transparent" type="submit">
+							Отправить
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="auth popup" id="change-password-popup" style="display: none;">
+		<div class="auth__wrapper popup-wrapper">
+			<div class="auth__bg popup-bg popup-close"></div>
+			<div class="auth__body popup-body">
+				<button type="button" class="auth__close-btn popup-close-btn popup-close" title="Close">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<form class="auth__container popup-container">
+					<h2 class="auth__title">Изменение пароля</h2>
+					<label class="auth__label">
+						<input type="password" name="password" placeholder="Пароль" id="password-input" required class="auth__input">
+					</label>
+					<label class="auth__label">
+						<input type="password" name="password-confirmation" placeholder="Подтверждение пароля" required class="auth__input">
+					</label>
+					<div class="auth__password-quality">
+						<span class="auth__password-quality-label">Качество пароля</span>
+						<div class="auth__password-quality-params" data-quality="0" data-for="password-input">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="auth__form-footer">
+						<button class="auth__submit button is-transparent" type="submit">
+							Подтвердить
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="cart-popup popup side-mode" id="cart-popup" style="display: none;">
+		<div class="cart-popup__wrapper popup-wrapper">
+			<div class="cart-popup__bg popup-bg popup-close"></div>
+			<div class="cart-popup__body popup-body">
+				<button type="button" class="cart-popup__close-btn popup-close-btn popup-close" title="Close cart">
+					<span>closed</span>
+					<svg width="16" height="16">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<div class="cart-popup__container popup-container">
+					<h2 class="cart-popup__title">Cart (2)</h2>
+					<div class="cart-popup__note is-accent">
+						<svg width="19" height="19">
+							<use href="img/sprites.svg#delivery"></use>
+						</svg>
+						<span>Free shipping!</span>
+					</div>
+					<div class="cart-popup__note">
+						Discount does not apply to promotional items
+					</div>
+					<div class="cart-popup__inner">
+						<ul class="cart-popup__list">
+							<li class="cart-popup__item cart-item">
+								<div class="cart-item__inner">
+									<a href="single-product.html" class="cart-item__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="71" height="95" class="image-aspect-ratio" style="--aspect-ratio: 71/95" loading="lazy">
+										</picture>
+									</a>
+									<div class="cart-item__content">
+										<h3 class="cart-item__title">Seamless short sleeve top</h3>
+										<div class="cart-item__settings">
+											<p>Green: S-M</p>
+										</div>
+										<div class="cart-item__footer">
+											<div class="cart-item__settings">
+												<p>Green: S-M</p>
+											</div>
+											<div class="cart-item__quantity">
+												<button type="button" class="cart-item__quantity-minus"></button>
+												<input type="text" inputmode="numeric" value="1" max="10" placeholder="0" name="quantity">
+												<button type="button" class="cart-item__quantity-plus"></button>
+											</div>
+											<div class="cart-item__article">Article: 451287</div>
+											<div class="cart-item__price">
+												<del>1450 грн</del>
+												<ins>2 340грн</ins>
+												<!-- <strong></strong> -->
+											</div>
+										</div>
+									</div>
+									<button class="cart-item__remove" type="button" aria-label="Remove">
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#close"></use>
+										</svg>
+									</button>
+								</div>
+							</li>
+							<li class="cart-popup__item cart-item">
+								<div class="cart-item__inner">
+									<a href="single-product.html" class="cart-item__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="71" height="95" class="image-aspect-ratio" style="--aspect-ratio: 71/95" loading="lazy">
+										</picture>
+									</a>
+									<div class="cart-item__content">
+										<h3 class="cart-item__title">Seamless short sleeve top</h3>
+										<div class="cart-item__settings">
+											<p>Green: S-M</p>
+										</div>
+										<div class="cart-item__footer">
+											<div class="cart-item__settings">
+												<p>Green: S-M</p>
+											</div>
+											<div class="cart-item__quantity">
+												<button type="button" class="cart-item__quantity-minus"></button>
+												<input type="text" inputmode="numeric" value="1" max="10" placeholder="0" name="quantity">
+												<button type="button" class="cart-item__quantity-plus"></button>
+											</div>
+											<div class="cart-item__article">Article: 451287</div>
+											<div class="cart-item__price">
+												<del>1450 грн</del>
+												<ins>2 340грн</ins>
+												<!-- <strong></strong> -->
+											</div>
+										</div>
+									</div>
+									<button class="cart-item__remove" type="button" aria-label="Remove">
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#close"></use>
+										</svg>
+									</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="cart-popup__total">
+						<span>Order price:</span>
+						<strong>7 500 $</strong>
+					</div>
+					<a href="#" class="cart-popup__button button is-submit">
+						Placing an order
+					</a>
+					<a href="#" class="cart-popup__button button is-transparent">
+						View cart
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cart-popup popup side-mode" id="favorites-popup" style="display: none;">
+		<div class="cart-popup__wrapper popup-wrapper">
+			<div class="cart-popup__bg popup-bg popup-close"></div>
+			<div class="cart-popup__body popup-body">
+				<button type="button" class="cart-popup__close-btn popup-close-btn popup-close" title="Close cart">
+					<span>closed</span>
+					<svg width="16" height="16">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<div class="cart-popup__container popup-container">
+					<h2 class="cart-popup__title">Favorites (2)</h2>
+					<div class="cart-popup__note is-accent">
+						<svg width="19" height="19">
+							<use href="img/sprites.svg#delivery"></use>
+						</svg>
+						<span>Free shipping!</span>
+					</div>
+					<div class="cart-popup__note">
+						Discount does not apply to promotional items
+					</div>
+					<div class="cart-popup__inner">
+						<ul class="cart-popup__list">
+							<li class="cart-popup__item cart-item">
+								<div class="cart-item__inner">
+									<a href="single-product.html" class="cart-item__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="71" height="95" class="image-aspect-ratio" style="--aspect-ratio: 71/95" loading="lazy">
+										</picture>
+									</a>
+									<div class="cart-item__content">
+										<h3 class="cart-item__title">Seamless short sleeve top</h3>
+										<div class="cart-item__article">Article: 451287</div>
+									</div>
+									<button class="cart-item__remove" type="button" aria-label="Remove">
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#close"></use>
+										</svg>
+									</button>
+								</div>
+							</li>
+							<li class="cart-popup__item cart-item">
+								<div class="cart-item__inner">
+									<a href="single-product.html" class="cart-item__image">
+										<picture>
+											<source srcset="img/products-cards/product-card-image-1.avif" type="image/avif">
+											<source srcset="img/products-cards/product-card-image-1.webp" type="image/webp">
+											<img src="img/products-cards/product-card-image-1.jpg" alt="" width="71" height="95" class="image-aspect-ratio" style="--aspect-ratio: 71/95" loading="lazy">
+										</picture>
+									</a>
+									<div class="cart-item__content">
+										<h3 class="cart-item__title">Seamless short sleeve top</h3>
+										<div class="cart-item__article">Article: 451287</div>
+									</div>
+									<button class="cart-item__remove" type="button" aria-label="Remove">
+										<svg width="16" height="16">
+											<use href="img/sprites.svg#close"></use>
+										</svg>
+									</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script type="module" src="js/main.js?v=1"></script>
+
+</body>
+
+</html>

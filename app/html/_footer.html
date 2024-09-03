@@ -1,0 +1,292 @@
+		<footer class="footer">
+			<div class="footer__contact footer-block">
+				<b class="footer-block__title">contact</b>
+				<a href="mailto:info@marin.com" class="footer__contact-email" aria-label="email: info@marin.com">
+					<svg width="25" height="25">
+						<use href="img/sprites.svg#email"></use>
+					</svg>
+					<span>E-mail. info@marin.com</span>
+				</a>
+				<a href="index.html" class="footer__contact-logo">
+					MARIN
+				</a>
+				<div class="footer__copyright">
+					Copyright © 2024 All rights reserved.
+				</div>
+			</div>
+			<nav class="footer__nav footer-block">
+				<b class="footer-block__title">FOR BUYERS</b>
+				<ul>
+					<li>
+						<a href="about.html">
+							About Us
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Exchange
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Shipping and payment
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Return
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer__subscribe footer-block">
+				<b class="footer-block__title">Subscribe</b>
+				<ul>
+					<li>
+						<a href="#" aria-label="About Us" target="_blank">
+							<svg width="40" height="40">
+								<use href="img/sprites.svg#instagram"></use>
+							</svg>
+							<span>About Us</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="Facebook" target="_blank">
+							<svg width="40" height="40">
+								<use href="img/sprites.svg#facebook"></use>
+							</svg>
+							<span>Facebook</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	<div class="auth popup" id="login-popup" style="display: none;">
+		<div class="auth__wrapper popup-wrapper">
+			<div class="auth__bg popup-bg popup-close"></div>
+			<div class="auth__body popup-body">
+				<button type="button" class="auth__close-btn popup-close-btn popup-close" title="Close">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<form class="auth__container popup-container">
+					<h2 class="auth__title">Вход в личный кабинет</h2>
+					<label class="auth__label">
+						<input type="tel" name="phone" placeholder="Номер телефона" required class="auth__input">
+					</label>
+					<label class="auth__label">
+						<input type="password" name="password" placeholder="Пароль" required class="auth__input">
+					</label>
+					<div class="auth__form-links">
+						<a href="#recovery-password-popup" class="auth__form-link popup-close open-popup">Забыли пароль?</a>
+						<a href="#register-popup" class="auth__form-link popup-close open-popup"><u>Регистрация</u></a>
+					</div>
+					<div class="auth__form-footer">
+						<button class="auth__submit button" type="submit">
+							Вход
+						</button>
+						<button class="auth__close button is-alt popup-close" type="button">
+							Отмена
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="auth popup" id="register-popup" style="display: none;">
+		<div class="auth__wrapper popup-wrapper">
+			<div class="auth__bg popup-bg popup-close"></div>
+			<div class="auth__body popup-body">
+				<button type="button" class="auth__close-btn popup-close-btn popup-close" title="Close">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<form class="auth__container popup-container">
+					<h2 class="auth__title">Регистрация</h2>
+					<label class="auth__label">
+						<input type="text" name="name" placeholder="ФИО" required class="auth__input">
+					</label>
+					<label class="auth__label">
+						<input type="tel" name="phone" placeholder="Номер телефона" required class="auth__input">
+					</label>
+					<label class="auth__label">
+						<input type="password" name="password" placeholder="Пароль" required class="auth__input">
+					</label>
+					<label class="auth__radio">
+						<input type="radio" name="privacy" required class="auth__radio-input">
+						<span class="auth__radio-element"></span>
+						<span class="auth__radio-text">
+							Ознакомлен с политикой конфиденфиальности
+						</span>
+					</label>
+					<div class="auth__form-footer">
+						<button class="auth__submit button is-transparent" type="submit">
+							Отправить пароль
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="auth popup" id="recovery-password-popup" style="display: none;">
+		<div class="auth__wrapper popup-wrapper">
+			<div class="auth__bg popup-bg popup-close"></div>
+			<div class="auth__body popup-body">
+				<button type="button" class="auth__close-btn popup-close-btn popup-close" title="Close">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<form class="auth__container popup-container">
+					<h2 class="auth__title">Восстановление пароля</h2>
+					<div class="auth__text">
+						<p>
+							<small>
+								Введите ноер телефона, который вы использовали при регистрации. <br>
+								Вам будет отправленно сообщение с паролем.
+							</small>
+						</p>
+					</div>
+					<label class="auth__label">
+						<input type="tel" name="phone" placeholder="+38 (096) 000-00-00" required class="auth__input txt-center">
+					</label>
+					<div class="auth__text">
+						<p>
+							Указанный номер телефона, не найден <br><br>
+							<a href="#change-password-popup" class="open-popup popup-close"><u>Открыть попап с изменением пароля</u></a>
+						</p>
+					</div>
+					<div class="auth__form-footer">
+						<button class="auth__submit button is-transparent" type="submit">
+							Отправить
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="auth popup" id="change-password-popup" style="display: none;">
+		<div class="auth__wrapper popup-wrapper">
+			<div class="auth__bg popup-bg popup-close"></div>
+			<div class="auth__body popup-body">
+				<button type="button" class="auth__close-btn popup-close-btn popup-close" title="Close">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<form class="auth__container popup-container">
+					<h2 class="auth__title">Изменение пароля</h2>
+					<label class="auth__label">
+						<input type="password" name="password" placeholder="Пароль" id="password-input" required class="auth__input">
+					</label>
+					<label class="auth__label">
+						<input type="password" name="password-confirmation" placeholder="Подтверждение пароля" required class="auth__input">
+					</label>
+					<div class="auth__password-quality">
+						<span class="auth__password-quality-label">Качество пароля</span>
+						<div class="auth__password-quality-params" data-quality="0" data-for="password-input">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="auth__form-footer">
+						<button class="auth__submit button is-transparent" type="submit">
+							Подтвердить
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="cart-popup popup side-mode" id="cart-popup" style="display: none;">
+		<div class="cart-popup__wrapper popup-wrapper">
+			<div class="cart-popup__bg popup-bg popup-close"></div>
+			<div class="cart-popup__body popup-body">
+				<button type="button" class="cart-popup__close-btn popup-close-btn popup-close" title="Close cart">
+					<span>closed</span>
+					<svg width="16" height="16">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<div class="cart-popup__container popup-container">
+					<h2 class="cart-popup__title">Cart (2)</h2>
+					<div class="cart-popup__note is-accent">
+						<svg width="19" height="19">
+							<use href="img/sprites.svg#delivery"></use>
+						</svg>
+						<span>Free shipping!</span>
+					</div>
+					<div class="cart-popup__note">
+						Discount does not apply to promotional items
+					</div>
+					<div class="cart-popup__inner">
+						<ul class="cart-popup__list">
+							@@loop("_cart-popup-item.html", [
+								{},
+								{},
+							])
+						</ul>
+					</div>
+					<div class="cart-popup__total">
+						<span>Order price:</span>
+						<strong>7 500 $</strong>
+					</div>
+					<a href="#" class="cart-popup__button button is-submit">
+						Placing an order
+					</a>
+					<a href="#" class="cart-popup__button button is-transparent">
+						View cart
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cart-popup popup side-mode" id="favorites-popup" style="display: none;">
+		<div class="cart-popup__wrapper popup-wrapper">
+			<div class="cart-popup__bg popup-bg popup-close"></div>
+			<div class="cart-popup__body popup-body">
+				<button type="button" class="cart-popup__close-btn popup-close-btn popup-close" title="Close cart">
+					<span>closed</span>
+					<svg width="16" height="16">
+						<use href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<div class="cart-popup__container popup-container">
+					<h2 class="cart-popup__title">Favorites (2)</h2>
+					<div class="cart-popup__note is-accent">
+						<svg width="19" height="19">
+							<use href="img/sprites.svg#delivery"></use>
+						</svg>
+						<span>Free shipping!</span>
+					</div>
+					<div class="cart-popup__note">
+						Discount does not apply to promotional items
+					</div>
+					<div class="cart-popup__inner">
+						<ul class="cart-popup__list">
+							@@loop("_favorite-popup-item.html", [
+								{},
+								{},
+							])
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script type="module" src="js/main.js?v=1"></script>
+
+</body>
+</html>

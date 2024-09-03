@@ -1,0 +1,404 @@
+@@include("html/_header.html")
+
+	<div class="breadcrumbs container">
+		<a href="#" class="breadcrumbs__link">Home</a>
+		<span class="breadcrumbs__separator">|</span>
+		<span class="breadcrumbs__current">Thank you page</span>
+	</div>
+
+	<main class="main flex-mode">
+		<section class="checkout">
+			<h1 class="checkout__title">Placing an order</h1>
+			<div class="checkout__aside">
+				<div class="checkout__cart checkout-cart">
+					<div class="checkout-cart__header">
+						<h2 class="checkout-cart__title">
+							Cart (1)
+						</h2>
+						<a href="#" class="checkout-cart__link">
+							Edit
+						</a>
+					</div>
+					<div class="checkout-cart__note">
+						<p>
+							The discount does not apply to promotional items.
+						</p>
+					</div>
+					<ul class="checkout-cart__list">
+						<li class="checkout-cart__item checkout-cart-item">
+							<div class="checkout-cart-item__image">
+								<picture>
+									<source srcset="img/index/hero/index-hero-image-large.avif" type="image/avif">
+									<source srcset="img/index/hero/index-hero-image-large.webp" type="image/webp">
+									<img src="img/index/hero/index-hero-image-large.jpg" alt="" width="98" height="142" class="image-aspect-ratio" style="--aspect-ratio: 98/142;" loading="lazy">
+								</picture>
+							</div>
+							<div class="checkout-cart-item__info">
+								<h3 class="checkout-cart-item__name">Seamless short sleeve top</h3>
+								<div class="checkout-cart-item__article">
+									Item: 451287
+								</div>
+								<div class="checkout-cart-item__settings">
+									Green: S-M
+								</div>
+								<div class="checkout-cart-item__footer">
+									<strong>120 $</strong>
+									<b>150 $</b>
+									<span>1 pc</span>
+								</div>
+							</div>
+						</li>
+						<li class="checkout-cart__item checkout-cart-item">
+							<div class="checkout-cart-item__image">
+								<picture>
+									<source srcset="img/index/hero/index-hero-image-large.avif" type="image/avif">
+									<source srcset="img/index/hero/index-hero-image-large.webp" type="image/webp">
+									<img src="img/index/hero/index-hero-image-large.jpg" alt="" width="98" height="142" class="image-aspect-ratio" style="--aspect-ratio: 98/142;" loading="lazy">
+								</picture>
+							</div>
+							<div class="checkout-cart-item__info">
+								<h3 class="checkout-cart-item__name">Seamless short sleeve top</h3>
+								<div class="checkout-cart-item__article">
+									Item: 451287
+								</div>
+								<div class="checkout-cart-item__settings">
+									Green: S-M
+								</div>
+								<div class="checkout-cart-item__footer">
+									<strong>120 $</strong>
+									<b>150 $</b>
+									<span>1 pc</span>
+								</div>
+							</div>
+						</li>
+						<li class="checkout-cart__item checkout-cart-item">
+							<div class="checkout-cart-item__image">
+								<picture>
+									<source srcset="img/index/hero/index-hero-image-large.avif" type="image/avif">
+									<source srcset="img/index/hero/index-hero-image-large.webp" type="image/webp">
+									<img src="img/index/hero/index-hero-image-large.jpg" alt="" width="98" height="142" class="image-aspect-ratio" style="--aspect-ratio: 98/142;" loading="lazy">
+								</picture>
+							</div>
+							<div class="checkout-cart-item__info">
+								<h3 class="checkout-cart-item__name">Seamless short sleeve top</h3>
+								<div class="checkout-cart-item__article">
+									Item: 451287
+								</div>
+								<div class="checkout-cart-item__settings">
+									Green: S-M
+								</div>
+								<div class="checkout-cart-item__footer">
+									<strong>120 $</strong>
+									<b>150 $</b>
+									<span>1 pc</span>
+								</div>
+							</div>
+						</li>
+						<li class="checkout-cart__item checkout-cart-item">
+							<div class="checkout-cart-item__image">
+								<picture>
+									<source srcset="img/index/hero/index-hero-image-large.avif" type="image/avif">
+									<source srcset="img/index/hero/index-hero-image-large.webp" type="image/webp">
+									<img src="img/index/hero/index-hero-image-large.jpg" alt="" width="98" height="142" class="image-aspect-ratio" style="--aspect-ratio: 98/142;" loading="lazy">
+								</picture>
+							</div>
+							<div class="checkout-cart-item__info">
+								<h3 class="checkout-cart-item__name">Seamless short sleeve top</h3>
+								<div class="checkout-cart-item__article">
+									Item: 451287
+								</div>
+								<div class="checkout-cart-item__settings">
+									Green: S-M
+								</div>
+								<div class="checkout-cart-item__footer">
+									<strong>120 $</strong>
+									<b>150 $</b>
+									<span>1 pc</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="checkout-cart__sub-total">
+						<li>
+							<span>Order cost</span><b>120 $</b>
+						</li>
+						<li>
+							<span>Delivery</span><b>According to the carrier's rates</b>
+						</li>
+					</ul>
+					<div class="checkout-cart__promo-code">
+						<button class="checkout-cart__promo-code-target">
+							<span>Promo code</span>
+							<svg width="24" height="24">
+								<use href="img/sprites.svg#drop-down-arrow-2"></use>
+							</svg>
+						</button>
+						<input type="text" placeholder="Enter your promocode..." class="checkout-cart__promo-code-input">
+					</div>
+					<ul class="checkout-cart__total">
+						<span>Amount to be paid</span><strong>120$</strong>
+					</ul>
+				</div>
+			</div>
+			<div class="checkout__main">
+				<fieldset class="checkout__fieldset">
+					<legend class="checkout__legend">Receiving address</legend>
+					<label class="checkout__label">
+						<span>Full name</span>
+						<input type="text" name="fullname" placeholder="" required class="checkout__input">
+					</label>
+					<label class="checkout__label">
+						<span>Telephone:</span>
+						<input type="tel" name="tel" placeholder="" required class="checkout__input">
+					</label>
+					<label class="checkout__label">
+						<span>E-mail:</span>
+						<input type="email" name="email" placeholder="" required class="checkout__input">
+					</label>
+					<label class="checkout__label">
+						<span>Country and city</span>
+						<div class="checkout__select select">
+							<select name="country">
+								<option value="Ukraine">Ukraine</option>
+								<option value="Country 1">Country 1</option>
+								<option value="Country 2">Country 2</option>
+							</select>
+							<svg width="24" height="24">
+								<use href="img/sprites.svg#drop-down-arrow"></use>
+							</svg>
+						</div>
+						<input type="text" name="city" placeholder="Enter city" required class="checkout__input">
+					</label>
+				</fieldset>
+				<fieldset class="checkout__fieldset">
+					<legend class="checkout__legend">Delivery</legend>
+					<div class="checkout__block">
+						<div class="checkout__block-head">
+							<label class="checkout__radio">
+								<input type="radio" name="delivery" value="1">
+								<span></span>
+								<span>
+									<span>New mail - branch</span>
+									<span>Free shipping</span>
+									<span>from 1-5 days</span>
+								</span>
+							</label>
+							<i class="checkout__help" aria-label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quam laborum blanditiis veniam ea tempora eum maxime aperiam harum provident voluptatem voluptas, non quia deserunt mollitia ad laudantium assumenda officiis?">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg?v=2#info"></use>
+								</svg>
+							</i>
+						</div>
+						<div class="checkout__block-inner">
+							<div class="checkout__delivery">
+								<span>Branch number</span>
+								<div class="select">
+									<select name="delivery-select-1">
+										<option value="Enter the department">Enter the department</option>
+										<option value="Enter the department 2">Enter the department 2</option>
+										<option value="Enter the department 3">Enter the department 3</option>
+									</select>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</div>
+								<a href="#" aria-label="Map">
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#map"></use>
+									</svg>
+									<span>
+										Map
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="checkout__block">
+						<div class="checkout__block-head">
+							<label class="checkout__radio">
+								<input type="radio" name="delivery" value="2">
+								<span></span>
+								<span>
+									<span>New mail - branch</span>
+									<span>Free shipping</span>
+									<span>from 1-5 days</span>
+								</span>
+							</label>
+							<i class="checkout__help" aria-label="Text text text">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg?v=2#info"></use>
+								</svg>
+							</i>
+						</div>
+						<div class="checkout__block-inner">
+							<div class="checkout__delivery">
+								<span>Branch number</span>
+								<div class="select">
+									<select name="delivery-select-2">
+										<option value="Enter the department">Enter the department</option>
+										<option value="Enter the department 2">Enter the department 2</option>
+										<option value="Enter the department 3">Enter the department 3</option>
+									</select>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</div>
+								<a href="#">
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#map"></use>
+									</svg>
+									<span>
+										Map
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="checkout__block">
+						<div class="checkout__block-head">
+							<label class="checkout__radio">
+								<input type="radio" name="delivery" value="3">
+								<span></span>
+								<span>
+									<span>New mail - branch</span>
+									<span>Free shipping</span>
+									<span>from 1-5 days</span>
+								</span>
+							</label>
+							<i class="checkout__help" aria-label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum incidunt eligendi, voluptatum dolore provident hic fugit modi, numquam neque commodi tempora expedita iste voluptatem? Ab odit id temporibus obcaecati labore.">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg?v=2#info"></use>
+								</svg>
+							</i>
+						</div>
+						<div class="checkout__block-inner">
+							<div class="checkout__delivery">
+								<span>Branch number</span>
+								<div class="select">
+									<select name="delivery-select-3">
+										<option value="Enter the department">Enter the department</option>
+										<option value="Enter the department 2">Enter the department 2</option>
+										<option value="Enter the department 3">Enter the department 3</option>
+									</select>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</div>
+								<a href="#">
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#map"></use>
+									</svg>
+									<span>
+										Map
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset class="checkout__payment">
+					<legend class="checkout__legend">Payment</legend>
+					<div class="checkout__radio-payment">
+						<label>
+							<input type="radio" name="payment" value="1">
+							<span></span>
+							<div>
+								<h3>For Privat24 users</h3>
+								<p>In the payment purpose, be sure to indicate the order number. Payment to the bank account using the details. Only for Privat Bank users.</p>
+							</div>
+							<span>0%</span>
+						</label>
+						<i class="checkout__help" aria-label="Text text text">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg?v=2#info"></use>
+							</svg>
+						</i>
+					</div>
+					<div class="checkout__radio-payment">
+						<label>
+							<input type="radio" name="payment" value="2">
+							<span></span>
+							<div>
+								<h3>For users of other banks</h3>
+								<p>In the payment purpose, be sure to indicate the order number. Payment to the bank account using the details. Only for Privat Bank users.</p>
+								<p>In the payment purpose, be sure to indicate the order number. Payment to the bank account using the details. Only for Privat Bank users.</p>
+							</div>
+							<span>0%</span>
+						</label>
+						<i class="checkout__help" aria-label="Text text text">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg?v=2#info"></use>
+							</svg>
+						</i>
+					</div>
+					<div class="checkout__radio-payment">
+						<label>
+							<input type="radio" name="payment" value="3">
+							<span></span>
+							<div>
+								<h3>Payment by card - online</h3>
+								<p>In the payment purpose, be sure to indicate the order number. Payment to the bank account using the details. Only for Privat Bank users.</p>
+								<p>In the payment purpose, be sure to indicate the order number. Payment to the bank account using the details. Only for Privat Bank users.</p>
+							</div>
+							<span>0%</span>
+						</label>
+						<i class="checkout__help" aria-label="Text text text">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg?v=2#info"></use>
+							</svg>
+						</i>
+					</div>
+					<div class="checkout__radio-payment">
+						<label>
+							<input type="radio" name="payment" value="4">
+							<span></span>
+							<div>
+								<h3>Apple Pay</h3>
+								<p>In the payment purpose, be sure to indicate the order number. Payment to the bank account using the details. Only for Privat Bank users.</p>
+								<p>In the payment purpose, be sure to indicate the order number. Payment to the bank account using the details. Only for Privat Bank users.</p>
+							</div>
+							<span>0%</span>
+						</label>
+						<i class="checkout__help" aria-label="Text text text">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg?v=2#info"></use>
+							</svg>
+						</i>
+					</div>
+					<div class="checkout__radio-payment">
+						<label>
+							<input type="radio" name="payment" value="5">
+							<span></span>
+							<div>
+								<h3>Cash on delivery</h3>
+								<p>In the payment purpose, be sure to indicate the order number. Payment to the bank account using the details. Only for Privat Bank users.</p>
+								<p>In the payment purpose, be sure to indicate the order number. Payment to the bank account using the details. Only for Privat Bank users.</p>
+							</div>
+							<span>0%</span>
+						</label>
+						<i class="checkout__help" aria-label="Text text text">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg?v=2#info"></use>
+							</svg>
+						</i>
+					</div>
+				</fieldset>
+				<div class="checkout__comment">
+					<button type="button">
+						Comment to order
+					</button>
+					<textarea name="message" placeholder="Into text..."></textarea>
+				</div>
+				<div class="checkout__footer">
+					<button class="checkout__button button is-alt-2" type="submit">
+						Place an order
+					</button>
+					<button class="checkout__button button is-transparent-2" type="submit">
+						Buy in 1 click
+					</button>
+				</div>
+			</div>
+		</section>
+	</main>
+
+@@include("html/_footer.html")

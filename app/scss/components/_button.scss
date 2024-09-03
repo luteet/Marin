@@ -1,0 +1,64 @@
+.button {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	min-width: 15.9375rem;
+
+	font-weight: 400;
+	border: 1px solid var(--accent);
+	background: var(--accent);
+	color: var(--white);
+
+	padding: 1.0625rem 0.9375rem;
+
+	@media (hover: hover) {
+
+		transition: background .3s, color .3s, border-color .3s;
+
+		&:hover {
+			background: var(--accent-hover);
+			border-color: var(--accent);
+			color: var(--white);
+		}
+	
+		&:active {
+			background: var(--accent-active);
+		}
+	}
+
+	&.is-alt-2 {
+		background: var(--black);
+		border-color: var(--black);
+		color: var(--white);
+	}
+
+	&.is-alt {
+		background: var(--white);
+		color: var(--accent);
+	}
+
+	&.is-transparent {
+		background: transparent;
+		color: var(--accent);
+	}
+
+	&.is-transparent-2 {
+		background: transparent;
+		color: var(--black);
+		border-color: var(--black);
+
+		font-size: 1.125rem;
+		line-height: 150%;
+	}
+
+	&.is-transparent-3 {
+		background: var(--white);
+		color: var(--accent);
+
+		font-size: 1.25rem;
+		line-height: 150%;
+	}
+}
